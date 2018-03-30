@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+    <ImageView
+        android:id="@+id/noshare"
+        android:visibility="gone"
+        android:src="@drawable/noshare"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

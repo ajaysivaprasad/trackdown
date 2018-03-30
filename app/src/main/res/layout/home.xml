@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:id="@+id/internet_connection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Game Starts In"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="#FF4A36CB"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="#FF4A36CB"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#FF4A36CB"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="#FF4A36CB"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#FF4A36CB"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="#FF4A36CB"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Instructions"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:typeface="serif" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/instructions"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:typeface="serif" />
+
+</LinearLayout>
+</ScrollView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/no_internet_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center">
+      <ImageView
+          android:tint="@android:color/darker_gray"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/no_internet_connection"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="No Internet Connection"
+          android:textColor="@android:color/darker_gray"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:typeface="serif" />
+  </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/refresh"
+            android:clickable="true"
+            android:background="@drawable/clickable"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/refresh"
+                android:tint="@android:color/darker_gray" />
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Tap to Refresh"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

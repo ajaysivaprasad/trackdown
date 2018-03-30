@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Track Down</string>
+    <string name="instructions">
+\n● All participants must have a stable internet connection
+        \n\n● Participants are not supposed to share the application with anyone else
+        \n\n● Participants should not attempt to alter the application
+        \n\n● Participants should be present with in the college premises during the competition
+        \n\n● If the participants are found to violate any of the above rules, they will be disqualified without any prior notice
+        \n\n<b>NB: Please check the notifications regularly</b>\n
+    </string>
+    <string name="key">
+        Type the word <b>problematic</b>
+    </string>
+</resources>
